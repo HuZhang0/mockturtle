@@ -751,6 +751,7 @@ private:
       uint64_t cut_index : 31;
       uint64_t node_index : 32;
     };
+    multi_match_data() : data( 0 ) {}
   };
   union multioutput_info
   {

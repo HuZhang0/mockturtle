@@ -3444,7 +3444,7 @@ private:
  * \param pst Mapping statistics
  */
 template<class Ntk, unsigned CutSize = 4u, typename CutData = cut_enumeration_exact_map_cut, class NtkDest, unsigned NInputs>
-NtkDest map( Ntk& ntk, exact_library<NtkDest, NInputs> const& library, map_params const& ps = {}, map_stats* pst = nullptr )
+NtkDest exactmap( Ntk& ntk, exact_library<NtkDest, NInputs> const& library, map_params const& ps = {}, map_stats* pst = nullptr )
 {
   static_assert( is_network_type_v<Ntk>, "Ntk is not a network type" );
   static_assert( has_size_v<Ntk>, "Ntk does not implement the size method" );
